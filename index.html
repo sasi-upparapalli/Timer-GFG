@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer - Campus Body</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo and Text in top-left corner -->
+<div class="logo">
+    <img src="gfg.jpg" alt="Campus Body Logo" id="logo-img">
+    <span class="logo-text">GFG Campus Body REC</span>
+</div>
+
+        <!-- Main Timer Display -->
+        <div class="timer-container">
+            <div class="timer-display" id="timerDisplay">00:00</div>
+            <div class="timer-controls">
+                <button class="btn edit-btn" id="editBtn">Edit Timer</button>
+                <button class="btn reset-btn" id="resetBtn">Reset</button>
+                <button class="btn start-stop-btn" id="startStopBtn">Start</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Timer Modal -->
+    <div class="modal" id="editModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Edit Timer</h2>
+                <span class="close" id="closeModal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="timer-type">
+                    <label>
+                        <input type="radio" name="timerType" value="countdown" checked>
+                        Countdown
+                    </label>
+                    <label>
+                        <input type="radio" name="timerType" value="countup">
+                        Count till (from date and time)
+                    </label>
+                </div>
+
+                <div class="time-inputs">
+                    <div class="time-input-group">
+                        <label>Hours</label>
+                        <div class="input-spinner">
+                            <button class="spinner-btn" data-input="hours" data-action="decrease">&#8249;</button>
+                            <select id="hours">
+                                <option value="00">00</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <button class="spinner-btn" data-input="hours" data-action="increase">&#8250;</button>
+                        </div>
+                    </div>
+
+                    <div class="time-input-group">
+                        <label>Minutes</label>
+                        <div class="input-spinner">
+                            <button class="spinner-btn" data-input="minutes" data-action="decrease">&#8249;</button>
+                            <select id="minutes">
+                                <option value="00">00</option>
+                                <option value="01" selected>01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                                <option value="30">30</option>
+                                <option value="45">45</option>
+                                <option value="59">59</option>
+                            </select>
+                            <button class="spinner-btn" data-input="minutes" data-action="increase">&#8250;</button>
+                        </div>
+                    </div>
+
+                    <div class="time-input-group">
+                        <label>Seconds</label>
+                        <div class="input-spinner">
+                            <button class="spinner-btn" data-input="seconds" data-action="decrease">&#8249;</button>
+                            <select id="seconds">
+                                <option value="00" selected>00</option>
+                                <option value="15">15</option>
+                                <option value="30">30</option>
+                                <option value="45">45</option>
+                                <option value="59">59</option>
+                            </select>
+                            <button class="spinner-btn" data-input="seconds" data-action="increase">&#8250;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="on-zero-options">
+                    <h3>On zero</h3>
+                    <label>
+                        <input type="radio" name="onZero" value="stop" checked>
+                        Stop timer
+                    </label>
+                    <label>
+                        <input type="radio" name="onZero" value="restart">
+                        Restart timer
+                    </label>
+                    <label>
+                        <input type="radio" name="onZero" value="stopwatch">
+                        Run as stopwatch
+                    </label>
+                </div>
+
+                <div class="title-input">
+                    <label for="timerTitle">Title</label>
+                    <input type="text" id="timerTitle" placeholder="Enter timer title...">
+                </div>
+
+                <div class="show-message">
+                    <label>
+                        <input type="checkbox" id="showMessage" checked>
+                        Show message
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn test-btn" id="testBtn">Test</button>
+                <button class="btn cancel-btn" id="cancelBtn">Cancel</button>
+                <button class="btn start-btn" id="modalStartBtn">Start</button>
+            </div>
+        </div>
+    </div>
+
+   <!-- Your single default custom sound -->
+<audio id="customSound" preload="auto">
+    <source src="alert1.wav" type="audio/mpeg">
+</audio>
+
+<audio id="tickSound" preload="auto">
+  <source src="tick.wav" type="audio/mpeg">
+</audio>
+    <script src="app.js"></script>
+</body>
+</html>
