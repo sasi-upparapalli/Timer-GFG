@@ -56,9 +56,10 @@ A stylish, customizable timer web application built using HTML, CSS, and JavaScr
 ---
 
 ## 📸 Screenshots
+[![project2.png](https://i.postimg.cc/qqjHn2k1/project2.png)](https://postimg.cc/5QYrWYQz)
+[![Screenshot-2025-08-03-194505.png](https://i.postimg.cc/52pQ0rdz/Screenshot-2025-08-03-194505.png)](https://postimg.cc/BjLn7MvZ)
 
-> *(Add screenshots here if available)*  
-> ![screenshot](screenshot.png)
+
 
 ---
 
@@ -90,6 +91,6 @@ A stylish, customizable timer web application built using HTML, CSS, and JavaScr
 
 **SASIKANTH**  
 > Developer & Designer | Data Science Enthusiast  
-> [LinkedIn](https://www.linkedin.com/in/sasiupparapalli28/) • [GitHub](https://github.com/your-username) • [Live Site](https://sasi-upparapalli.github.io/Timer-GFG/)
+> [LinkedIn](https://www.linkedin.com/in/sasiupparapalli28/) • [GitHub](https://github.com/sasi-upparapalli/Timer-GFG.git) • [Live Site](https://sasi-upparapalli.github.io/Timer-GFG/)
 
 ---
